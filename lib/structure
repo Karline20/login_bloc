@@ -1,0 +1,66 @@
+lib/
+├── data/
+│   ├── api/
+│   │   ├── api_client.dart             # API client setup (e.g., Dio or HttpClient)
+│   │   └── api_service.dart            # Defines specific API endpoints and HTTP requests
+│   │   
+│   ├── models/
+│   │   ├── user_model.dart             # Model class for User
+│   │   ├── product_model.dart          # Model class for Product
+│   │   └── ...                         # Additional data models
+│   │   
+│   ├── repository/
+│   │   ├── user_repository.dart        # Repository to handle user-related data and logic
+│   │   ├── product_repository.dart     # Repository for product-related logic
+│   │   └── ...                         # Additional repositories
+│   │   
+│   └── local/
+│       ├── db_helper.dart              # Database helper (e.g., SQLite or Hive setup)
+│       └── local_storage_service.dart  # Handles saving/loading data from local storage
+│
+├── blocs/
+│   ├── authentication/
+│   │   ├── auth_bloc.dart              # Authentication BLoC for login/logout
+│   │   ├── auth_event.dart             # Events for authentication
+│   │   └── auth_state.dart             # States for authentication
+│   │   
+│   ├── user/
+│   │   ├── user_bloc.dart              # User BLoC to handle user-related data
+│   │   ├── user_event.dart             # Events for user-related actions
+│   │   └── user_state.dart             # States for user-related actions
+│   │   
+│   ├── product/
+│   │   ├── product_bloc.dart           # Product BLoC for handling product data
+│   │   ├── product_event.dart          # Events for product actions
+│   │   └── product_state.dart          # States for product actions
+│   │   
+│   └── ...                             # Additional BLoCs if needed
+│
+├── presentation/
+│   ├── screens/
+│   │   ├── home_screen.dart            # Home screen widget
+│   │   ├── login_screen.dart           # Login screen widget
+│   │   └── ...                         # Additional screens
+│   │   
+│   ├── widgets/
+│   │   ├── custom_button.dart          # Custom reusable button widget
+│   │   ├── loading_indicator.dart      # Loading indicator widget
+│   │   └── ...                         # Additional reusable widgets
+│   │   
+│   └── themes/
+│       ├── app_theme.dart              # ThemeData setup for app-wide theming
+│       └── colors.dart                 # App color constants
+│
+├── utils/
+│   ├── constants/
+│   │   ├── api_constants.dart          # API-related constants (e.g., base URLs, endpoints)
+│   │   └── app_constants.dart          # General constants used across the app
+│   │   
+│   ├── helpers/
+│   │   ├── validator.dart              # Input validation helper
+│   │   └── formatters.dart             # Formatting helpers (e.g., date, currency)
+│   │   
+│   └── ...                             # Additional utilities
+│
+├── main.dart                           # App entry point
+└── routes.dart                         # Defines app routes for navigation
